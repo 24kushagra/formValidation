@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: white;
+   color: aliceblue;
+    
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+form{
+    border-radius: 18px;
+    height: 72vh;
+    width: 25vw;
+    font-size: 17px;
+    color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+::placeholder{
+    color: rgb(159, 157, 157);
+}
+
+input{
+    width: 330px;
+    height: 40px;
+    margin-top:6px;
+    margin-bottom: 3px;
+    border-left: none;
+    border-right:none ;
+    border-top:none ;
+    outline: none;
+    color: black;
+    caret-color: black;
+    background-color: transparent;
+    border-bottom: 1px black solid;
+}
+
+input:hover{
+    border-bottom: 2px black;
+}
+
+.input-group{
+    margin: 10px 40px;
+}
+
+.input-group:nth-child(1){
+    margin-top: 30px;
+}
+
+textarea{
+    width: 330px;
+    height: 60px;
+    border-left: none;
+    border-right:none ;
+    border-top:none ;
+    background-color: transparent;
+    color: black;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top:6px;
+    border-bottom: 1px black solid;
+  
+}
+
+textarea:hover{
+    border-bottom: 2px black solid;
+}
+
+button{
+   padding: 8px 18px;
+   border-radius: 5px;
+   background-color: black;
+   color: aliceblue;
+   border: 1px solid aliceblue;
+   transition: all ease .1s;
+}
+
+button:hover{
+    outline: 3px rgb(203, 200, 200) solid;
+    scale: 1.1;
+}
+
+.input-group span{
+    position: absolute;
+    right: 25px;
+    font-size: 14px;
+    color: red;
+    padding-top: 18px;
+}
+
+#submit-error{
+    position: absolute;
+    bottom: 11px;
+    font-size: 14px;
+    color: red;
+}
+
+
+#message-error{
+    position: absolute;
+    right: 28px;
+    font-size: 14px;
+    color: red;
+    padding-top: 32px;
+}
+
+#correct{
+    padding-right: 10px;
+    color: green;
+}
+
+#incorrect{
+    padding-right: 2px;
+    color: red;
+}
